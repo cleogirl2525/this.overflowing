@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Ariel', sans-serif;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 29%, rgba(187,0,0,1) 58%, rgba(159,147,98,1) 100%);
+  }
