@@ -7,11 +7,12 @@
     font-family: 'Ariel', sans-serif;
     font-size: small;
     color : #000;
-    text-shadow: 2px 2px rgb(44, 178, 255);
     background: radial-gradient(circle, rgba(159,0,0,1) 0%, rgba(159,147,98,1) 100%);
   }
   .thought {
     font-family: 'Ariel', sans-serif;
+    text-shadow: 2px 2px rgb(44, 178, 255);
+    font-size: 20px;
     color : #fff;
     background: none;
     border: none;
