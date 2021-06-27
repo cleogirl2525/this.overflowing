@@ -6,6 +6,7 @@
     margin: 0;
     font-family: 'Ariel', sans-serif;
     color : #fff;
+    text-shadow: 2px 2px #ff0000;
     background: rgb(187,0,0);
     background: radial-gradient(circle, rgba(159,0,0,1) 0%, rgba(159,147,98,1) 100%);
   }
