@@ -14,11 +14,9 @@
 
   #wrapper{ 
     background-image: url('images/sparkleflashslow.gif');
-    background-repeat:repeat-x;
+    background-repeat:repeat;
     background-position: top left;
-    background-size: cover;
-    height: auto;
-    width: 100%; 
+    background-size: 5%;
   }
   ::placeholder {
     color: rgb(44, 178, 255);
