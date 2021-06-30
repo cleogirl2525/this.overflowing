@@ -18,7 +18,7 @@
     animation: shake 9.5s; 
     animation-iteration-count: infinite; 
   }
-  @keyframes shake {
+  /* @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-4px, -20px) rotate(-1deg); }
     20% { transform: translate(-300px, 0px) rotate(1deg); }
@@ -30,7 +30,7 @@
     80% { transform: translate(-100px, -10px) rotate(1deg); }
     90% { transform: translate(1px, 20px) rotate(0deg); }
     100% { transform: translate(800px, -2px) rotate(-1deg); }
-  }
+  } */
 
   #wrapper{ 
     background-image: url('images/sparkleflashslow.gif');
