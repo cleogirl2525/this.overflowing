@@ -3,19 +3,32 @@
     <link rel="stylesheet" href="css-subpage.css">
 </head>
 <body>
-    
-  <div>
-    sometimes i think about <input type="text" class="thought" placeholder="a sweet smell"> in the midst of the chaos.
+    <div class="rose" style="z-index: 2;position: fixed; margin:50%;margin-top: 60%;">
+       <center><img src="images/rose.png" alt="bitcrushed black and white rose" style="width:300px;height:auto;"></center> 
+      </div>
+    <br> 
+  <div class="madlib">
+    sometimes i think about <input type="text" class="thought" placeholder="someone i left behind"> in the midst of the big to-do. what would i have become if i hadn't been feeling so <input type="text" class="feeling" placeholder="a feeling i don't want">???? on the palm of my hand i wear the time i <input type="text" class="activity" placeholder="something i always wished i'd done"> and think of the sun and the gold and the slight silver tint of my skin reflected in the waves. me: the <input type="text" class="career" placeholder="a career i wish i'd had">; the doctor of everything, walking on air over the turbulent skies of <input type="text" class="place" placeholder="a place you wish i'd lived">. But they were my skies. My skies and the skies where I first saw <input type="text" class="fucked" placeholder="someone i'd wish i'd fucked">, swaying in the hottest air. if i could be anywhere right now, it would be <input type="text" class="rather" placeholder="a place i'd rather be right now">. one foot there and one foot here, hearing how i can't be both but undeniably being so. that's where the vows take me. anyways.......... im the footman to the maid of honor and nothing can stop me but a green river and a sno-cone. you should have heard everyone clap at the kiss.
+
   </div>
-  <br><br>
+
+  <br>
   <center><div class="mail-it">
   SEND + LET GO
   </div></center>
-  
+
+  <br>
   <script>
   
     const mailButton = document.querySelector('.mail-it')
     const thought = document.querySelector('.thought')
+    const feeling = document.querySelector('.feeling')
+    const activity = document.querySelector('.activity')
+    const career = document.querySelector('.career')
+    const place = document.querySelector('.place')
+    const fucked = document.querySelector('.fucked')
+    const rather = document.querySelector('.rather')
+
   
     function dynamicMailTo (email, subject, body) {
       const data = `mailto:${email}?subject=${subject}&body=${body}`
@@ -30,9 +43,9 @@
       const subject = 'what ive carried for way too long now : '
       let body = ''
       if (thought.value === '') {
-        body = `...i haven't been thinking about much lately`
+        body = `what the world would be like without you? go back and finish! let it all go`
       } else {
-        body = `lately i've been thinking a lot about ${thought.value}`
+        body = `sometimes i think about ${thought.value} in the midst of the big to-do. what would i have become if i hadn't been feeling so ${feeling.value}???? on the palm of my hand i wear the time i ${activity.value} and think of the sun and the gold and the slight silver tint of my skin reflected in the waves. me: the ${career.value}; the doctor of everything, walking on air over the turbulent skies of ${place.value}. But they were my skies. My skies and the skies where I first saw ${fucked.value}, swaying in the hottest air. if i could be anywhere right now, it would be ${rather.value}. one foot there and one foot here, hearing how i can't be both but undeniably being so. that's where the vows take me. anyways.......... im the footman to the maid of honor and nothing can stop me but a green river and a sno-cone. you should have heard everyone clap at the kiss.`
       }
       dynamicMailTo(email, subject, body)
     })
