@@ -8,6 +8,8 @@
     font-size: 5vw;
     color : #000;
     background: radial-gradient(circle, rgba(159,0,0,1) 0%, rgba(159,147,98,1) 100%);
+    text-align: justify;
+    text-justify: auto;
   }
 
   ::placeholder {
@@ -15,15 +17,16 @@
     text-shadow: 2px 2px white;
     font-size: 1.5em;
   }
-  .thought {
+  .thought, .feeling, .activity, .career, .place, .fucked, .rather{
     font-family: 'Ariel', sans-serif;
     text-shadow: 2px 2px rgb(44, 178, 255);
-    font-size: 5vw;
+    font-size: 3vw;
     color : #fff;
     background: none;
     border: none;
     border-bottom: 1px solid black;
-    display: inline-block;
+    width: 70vw;
+
   }
 
   .mail-it {
@@ -54,4 +57,9 @@
     text-justify: auto;
     margin: 4vw;
     overflow: scroll;
+  }
+
+  .rose{
+  max-width: 100%;
+  height: auto;
   }
