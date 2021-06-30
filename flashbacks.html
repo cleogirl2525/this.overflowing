@@ -2,4 +2,41 @@
 <head>
     <link rel="stylesheet" href="css-subpage.css">
 </head>
+<body>
+    
+  <div>
+    sometimes i think about <input type="text" class="thought" placeholder="a sweet smell"> in the midst of the chaos.
+  </div>
+  <br><br>
+  <center><div class="mail-it">
+  SEND + LET GO
+  </div></center>
+  
+  <script>
+  
+    const mailButton = document.querySelector('.mail-it')
+    const thought = document.querySelector('.thought')
+  
+    function dynamicMailTo (email, subject, body) {
+      const data = `mailto:${email}?subject=${subject}&body=${body}`
+      const a = document.createElement('a')
+      a.setAttribute('href', data)
+      a.click()
+      a.remove()
+    }
+  
+    mailButton.addEventListener('click', () => {
+      const email = 'looklong@thisoverflowing.exposed'
+      const subject = 'what ive carried for way too long now : '
+      let body = ''
+      if (thought.value === '') {
+        body = `...i haven't been thinking about much lately`
+      } else {
+        body = `lately i've been thinking a lot about ${thought.value}`
+      }
+      dynamicMailTo(email, subject, body)
+    })
+  
+  </script>
+  </body>
 </html>
