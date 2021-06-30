@@ -17,8 +17,8 @@
     background-repeat:repeat-x;
     background-position: top left;
     background-size: cover;
-    height: 200%;
-    width: auto; 
+    height: auto;
+    width: 100%; 
   }
   ::placeholder {
     color: rgb(44, 178, 255);
