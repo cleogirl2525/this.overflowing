@@ -13,7 +13,7 @@
   }
 
   img {
-    box-shadow: 5px 5px 20px #FFFFFF;
+    /* box-shadow: 5px 5px 20px #FFFFFF; */
     border: 1px dotted black;
     animation: shake 9.5s; 
     animation-iteration-count: infinite; 
